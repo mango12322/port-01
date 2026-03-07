@@ -1,0 +1,135 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Momo+Signature&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+/* Reset CSS */
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+input,
+button,
+textarea {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+
+/* Common CSS */
+.inner {
+  width: 1300px;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+}
+.header .banner {
+  background-color: #222;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.header .banner .lnb {
+  width: 1300px;
+  margin: auto;
+  text-align: end;
+}
+.header .banner .lnb a {
+  margin: 10px;
+  color: #fff;
+}
+.header .banner .lnb a:last-child {
+  margin-right: 0;
+}
+.header .banner .lnb a em {
+  color: #ccc;
+}
+.header .nav {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.header .nav .logo {
+  display: flex;
+  align-items: center;
+}
+.header .nav .logo a {
+  display: flex;
+  align-items: center;
+}
+.header .nav .logo a span {
+  font-size: 30px;
+}
+.header .nav .logo a h1 {
+  margin-left: 5px;
+}
+.header .nav .gnb {
+  display: flex;
+}
+.header .nav .gnb li {
+}
+.header .nav .gnb li a {
+  margin: 20px;
+  font-size: 18px;
+  transition: 0.35s;
+}
+.header .nav .gnb li a:hover {
+  color: #bbb;
+}
+.header .nav .gnb li a:last-child {
+  margin-right: 0;
+}
+
+/* Intro */
+.intro {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: url(images/background-01.jpg) no-repeat center center;
+  background-size: cover;
+}
+.intro .heading {
+  color: #fff;
+  text-align: center;
+}
+.intro .heading h1 {
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+.intro .heading p {
+  font-size: 22px;
+  padding: 0 100px;
+  line-height: 1.4em;
+}
