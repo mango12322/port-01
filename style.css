@@ -216,3 +216,77 @@ button {
   background-color: #1c9b5c;
   /* transform: translateY(-2px); */
 }
+
+/* Festival */
+.festival {
+  background-color: #333333;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.festival .festival-heading {
+  text-align: center;
+}
+.festival .festival-heading h3 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.festival .festival-heading h3 span {
+  font-weight: 500;
+}
+.festival .festival-heading .btns {
+}
+.festival .festival-heading .btns a {
+  background-color: #fff;
+  color: #333;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.festival .festival-heading .btns a:hover {
+}
+.festival .festival-heading .btns a:first-child {
+  background-color: #ffc235;
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  padding: 30px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-content ul {
+}
+.footer-content ul:nth-child(1) {
+  flex: 1;
+}
+.footer-content ul:nth-child(2) {
+  flex: 1;
+}
+.footer-content ul:nth-child(3) {
+  flex: 2;
+}
+.footer-content ul:nth-child(3) li:last-child {
+  margin-top: 20px;
+}
+.footer-content ul li {
+  color: #d9d9d9;
+}
+.footer-content ul li:first-child {
+  font-weight: bold;
+}
+.footer-content ul li a {
+  color: #d9d9d9;
+  transition: 0.35s;
+}
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
