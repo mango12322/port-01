@@ -176,6 +176,66 @@ button {
   transform: scale(1.03);
 }
 
+/* Ranking */
+.ranking {
+  background-color: #f8f8f8;
+}
+.ranking-content {
+  padding: 100px;
+}
+.ranking-content h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.ranking-content .items {
+  display: flex;
+  justify-content: space-between;
+}
+.ranking-content .items .item {
+  width: 300px;
+  height: 450px;
+  border-radius: 30px 5px;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.ranking-content .items .item .image img {
+  width: 100%;
+  object-fit: cover;
+}
+.ranking-content .items .item .content {
+  padding: 15px;
+}
+.ranking-content .items .item .content .badge {
+  color: #fff;
+  background-color: #00a0e9;
+  padding: 2px 10px;
+}
+.ranking-content .items .item:first-child .content .badge {
+  background-color: #fa1714;
+}
+.ranking-content .items .item .content h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.ranking-content .items .item .content a {
+  color: tan;
+  font-weight: 500;
+  position: relative;
+}
+.ranking-content .items .item .content a:hover {
+  color: rgba(210, 180, 140, 0.7);
+}
+.ranking-content .items .item .content a span {
+  transition: 0.35s;
+  position: absolute;
+  right: -27px;
+}
+.ranking-content .items .item .content a:hover span {
+  right: -30px;
+}
+
 /* callaction */
 .callaction {
   height: 400px;
@@ -259,8 +319,6 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.footer-content ul {
 }
 .footer-content ul:nth-child(1) {
   flex: 1;
