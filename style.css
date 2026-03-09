@@ -98,8 +98,6 @@ button {
 .header .nav .gnb {
   display: flex;
 }
-.header .nav .gnb li {
-}
 .header .nav .gnb li a {
   margin: 20px;
   font-size: 18px;
@@ -214,7 +212,6 @@ button {
 }
 .callaction .callaction-heading a:hover {
   background-color: #1c9b5c;
-  /* transform: translateY(-2px); */
 }
 
 /* Festival */
