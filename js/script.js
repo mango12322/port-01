@@ -1,12 +1,25 @@
 $(function () {
+  // Go-top
+  $(".go-top").click(function (e) {
+    e.preventDefault();
+
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      600,
+    );
+  });
+
   // Header Scroll Change
   $(window).scroll(function () {
     if ($(window).scrollTop() > 50) {
-      $(".header").addClass("active");
+      $(".header, .go-top").addClass("active");
     } else {
-      $(".header").removeClass("active");
+      $(".header, .go-top").removeClass("active");
     }
   });
+
   // slick
   $(".testimonial-slider").slick({
     infinite: true,
