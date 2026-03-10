@@ -1,4 +1,13 @@
 $(function () {
+  // Header Scroll Change
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 50) {
+      $(".header").addClass("active");
+    } else {
+      $(".header").removeClass("active");
+    }
+  });
+  // slick
   $(".testimonial-slider").slick({
     infinite: true,
     slidesToShow: 3,
