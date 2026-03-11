@@ -1,4 +1,16 @@
 $(function () {
+  // Trigger
+  $(".trigger").click(function () {
+    $(this).toggleClass("active");
+    $(".gnb").toggleClass("active");
+
+    // 메뉴 클릭하면 닫히게
+    $(".gnb li a").click(function () {
+      $(".gnb").removeClass("active");
+      $(".trigger").removeClass("active");
+    });
+  });
+
   // Go-top
   $(".go-top").click(function (e) {
     e.preventDefault();
@@ -35,13 +47,15 @@ $(function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
