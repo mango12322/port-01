@@ -1,13 +1,13 @@
 $(function () {
   // Trigger
   $(".trigger").click(function () {
-    $(this).toggleClass("active");
+    $(".trigger").toggleClass("active");
     $(".gnb").toggleClass("active");
 
     // 메뉴 클릭하면 닫히게
     $(".gnb li a").click(function () {
-      $(".gnb").removeClass("active");
       $(".trigger").removeClass("active");
+      $(".gnb").removeClass("active");
     });
   });
 

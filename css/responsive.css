@@ -1,19 +1,19 @@
 @media (max-width: 768px) {
   .inner {
     width: 100%;
-    padding: 15px;
+    padding: 0 15px;
   }
 
   /* Header */
-  .header {
-    /* display: none; */
-  }
   .header .banner .lnb {
     width: 100%;
     padding-right: 10px;
   }
   .header .nav {
     width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
   }
   .header .nav .gnb {
     flex-direction: column;
@@ -32,6 +32,9 @@
   .header .nav .gnb.active {
     right: 0;
   }
+  .header.active .nav {
+    padding: 10px 15px;
+  }
 
   /* Trigger */
   .trigger {
@@ -40,12 +43,14 @@
     height: 15px;
     position: absolute;
     right: 15px;
-    top: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
   }
   .trigger span {
     position: absolute;
     height: 1px;
-    background-color: #333;
+    background-color: #070303;
     width: 100%;
     transition: 0.5s;
   }
